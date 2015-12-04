@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#startup sound
+/usr/local/bin/startupsound &
+
+# run the real xfce4-session exectuable
+/usr/bin/xfce4-session
+
+#logout sound
+/usr/local/bin/logoutsound

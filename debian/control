@@ -1,0 +1,12 @@
+Source: mx-event-sounds
+Section: system
+Priority: optional
+Maintainer: anticapitalista <antiX@operamail.com>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.4
+Homepage: https://github.com/AdrianTM/mx-codecs
+
+Package: mx-event-sounds
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, libcanberra-gstreamer, libcanberra-pulse, libcanberra-gtk-module
+Description: Enable events sounds at the click of a button.

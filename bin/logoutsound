@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#command to check and see if sounds are enabled
+#xfconf-query -c xsettings -p /Net/EnableEventSounds 
+#command to check sound theme name
+#xfconf-query -c xsettings -p /Net/SoundThemeName
+#command to find desktop-logout sound for a given theme
+#find  /usr/share/sounds/theme-name/ |grep desktop-logout
+
+customsound=$(cat ~/.config/logoutsound.conf)
+echo custom sound is $customsound
+
+soundstatus=$(xfconf-query -c xsettings -p /Net/EnableEventSounds)
+echo sound status is $soundstatus
+
+soundthemename=$(xfconf-query -c xsettings -p /Net/SoundThemeName)
+echo sound theme is $soundthemename
+
+defaultsound=$(find  /usr/share/sounds/$soundthemename/ |grep desktop-logout)
+echo default sound is $defaultsound
+
+if [ "$customsound" = "" ]; then
+	if [ "$soundstatus" = "true" ]; then
+		cvlc --play-and-exit file://$defaultsound 
+		exit 0
+	else
+		exit 0
+	fi
+else
+	if [ "$soundstatus" = "true" ]; then
+		cvlc --play-and-exit file://$customsound 
+		exit 0
+	else
+		exit 0
+	fi
+fi
+
+xfce4-session-logout
+
+exit 0
