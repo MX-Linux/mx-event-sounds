@@ -7,6 +7,6 @@ Standards-Version: 3.9.4
 Homepage: https://github.com/AdrianTM/mx-codecs
 
 Package: mx-event-sounds
-Architecture: any
+Architecture: all
 Depends: ${misc:Depends}, ${shlibs:Depends}, libcanberra-gstreamer, libcanberra-pulse, libcanberra-gtk-module
 Description: Enable events sounds at the click of a button.
