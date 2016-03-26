@@ -1,7 +1,7 @@
-67cf58f5e8ebaa25a3f5125712fc0594  usr/local/bin/logoutsound
-146761f576a852aae856f725d0284cc5  usr/local/bin/startupsound
+7ff927b94082ca25dc1a1e85a59312a4  usr/local/bin/logoutsound
+d5c7018c7c19f81e5b08f01b48b47c91  usr/local/bin/startupsound
 eac2edef1fe32cab4b7f2e835dabdedb  usr/local/bin/xfce4-session
-4c6ad966cbc15bc501df15551e0f5793  usr/share/doc/mx-event-sounds/changelog.gz
+d4b20558d31d4ce1f4124d9463c5c34e  usr/share/doc/mx-event-sounds/changelog.gz
 86238c733b83f0cbbe00221d82545b49  usr/share/doc/mx-event-sounds/copyright
 320f362dcc2b4dfd53514c57bfe69e40  usr/share/sounds/Borealis/index.theme
 b5c92afbbaea01c03b519c8ff4244c1b  usr/share/sounds/Borealis/stereo/Exit1_2.ogg

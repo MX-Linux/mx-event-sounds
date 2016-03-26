@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Sat, 26 Mar 2016 14:40:32 -0400
+Source: mx-event-sounds
+Binary: mx-event-sounds
+Architecture: source all
+Version: 0.1.3
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: dolphinoracle <dolphin@mx1>
+Description:
+ mx-event-sounds - Enable events sounds at the click of a button.
+Changes:
+ mx-event-sounds (0.1.3) UNRELEASED; urgency=low
+ .
+   * fixed playback for sounds with spaces in filename
+   *
+Checksums-Sha1:
+ aa542a00d90dae2663604deb8623959eb1eb55bd 620 mx-event-sounds_0.1.3.dsc
+ 02d2a85df2cf16b27310ad82399e02613e2e4c08 2800652 mx-event-sounds_0.1.3.tar.xz
+ 0c75940a5784113eb5e8f1055ae3b78a7b4b532d 2791394 mx-event-sounds_0.1.3_all.deb
+Checksums-Sha256:
+ 923d7092740863db4a0aa15603e993516395aab5e300261ab635ff50b44ca027 620 mx-event-sounds_0.1.3.dsc
+ 73893599bde279f2306e1b360ed6a5145133cddbf33b057e71e06f3c4bbe9542 2800652 mx-event-sounds_0.1.3.tar.xz
+ 243e99ae76ad85bcd13e6ce78ee0113ba2fb5e233321c3dad1fc74c719017ade 2791394 mx-event-sounds_0.1.3_all.deb
+Files:
+ 9288e5d97afb0017230972cc01939394 620 system optional mx-event-sounds_0.1.3.dsc
+ f76b9c037ae0c34444b30fbe53b93c7e 2800652 system optional mx-event-sounds_0.1.3.tar.xz
+ e3083e7043a2e7aac4b0a564347ff236 2791394 system optional mx-event-sounds_0.1.3_all.deb
