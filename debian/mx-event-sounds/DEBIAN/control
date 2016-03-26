@@ -1,6 +1,6 @@
 Package: mx-event-sounds
 Version: 0.1.2
-Architecture: amd64
+Architecture: all
 Maintainer: anticapitalista <antiX@operamail.com>
 Installed-Size: 2951
 Depends: libcanberra-gstreamer, libcanberra-pulse, libcanberra-gtk-module
