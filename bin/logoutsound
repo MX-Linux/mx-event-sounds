@@ -7,11 +7,11 @@
 #command to find desktop-logout sound for a given theme
 #find  /usr/share/sounds/theme-name/ |grep desktop-logout
 
-customsound=$(cat ~/.config/logoutsound.conf)
+customsound=$(cat ~/.config/mx-sounds/logoutsound.conf)
 echo custom sound is $customsound
 
-soundstatus=$(xfconf-query -c xsettings -p /Net/EnableEventSounds)
-echo sound status is $soundstatus
+logout_enabled=$(grep logout ~/.config/mx-sounds/mx-login-logout_sounds.conf |cut -d '=' -f2)
+echo sound status is $logout_enabled
 
 soundthemename=$(xfconf-query -c xsettings -p /Net/SoundThemeName)
 echo sound theme is $soundthemename
@@ -20,15 +20,15 @@ defaultsound=$(find  /usr/share/sounds/$soundthemename/ |grep desktop-logout)
 echo default sound is $defaultsound
 
 if [ "$customsound" = "" ]; then
-	if [ "$soundstatus" = "true" ]; then
-		cvlc --play-and-exit file://$defaultsound 
+	if [ "$logout_enabled" = "true" ]; then
+		play $defaultsound 
 		exit 0
 	else
 		exit 0
 	fi
 else
-	if [ "$soundstatus" = "true" ]; then
-		cvlc --play-and-exit file://$customsound 
+	if [ "$logout_enabled" = "true" ]; then
+		play $customsound 
 		exit 0
 	else
 		exit 0
