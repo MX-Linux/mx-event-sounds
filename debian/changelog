@@ -1,3 +1,18 @@
+mx-event-sounds (0.1.3) UNRELEASED; urgency=low
+
+  * fixed playback for sounds with spaces in filename
+  * 
+
+ -- dolphinoracle <dolphin@mx1>  Sat, 26 Mar 2016 14:40:32 -0400
+
+mx-event-sounds (0.1.2) mx; urgency=low
+
+  * adjusting configuration to ~/.config/mx-sounds/mx-login-logout_sounds.conf
+  * allows independent setting of event sounds and login/logout by adjusting true/false values
+
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Sat, 26 Mar 2016 08:47:44 -0400
+
 mx-event-sounds (0.1.1) unstable; urgency=low
 
   * Added logout/login options.

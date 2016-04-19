@@ -1,0 +1,10 @@
+Package: mx-event-sounds
+Version: 0.1.3
+Architecture: all
+Maintainer: anticapitalista <antiX@operamail.com>
+Installed-Size: 2951
+Depends: libcanberra-gstreamer, libcanberra-pulse, libcanberra-gtk-module
+Section: system
+Priority: optional
+Homepage: https://github.com/AdrianTM/mx-codecs
+Description: Enable events sounds at the click of a button.

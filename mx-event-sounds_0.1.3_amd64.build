@@ -1,0 +1,45 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package mx-event-sounds
+dpkg-buildpackage: source version 0.1.3
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by dolphinoracle <dolphin@mx1>
+ dpkg-source --before-build mx-event-sounds
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b mx-event-sounds
+dpkg-source: info: using source format `3.0 (native)'
+dpkg-source: info: building mx-event-sounds in mx-event-sounds_0.1.3.tar.xz
+dpkg-source: info: building mx-event-sounds in mx-event-sounds_0.1.3.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package mx-event-sounds: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `mx-event-sounds' in `../mx-event-sounds_0.1.3_all.deb'.
+ dpkg-genchanges  >../mx-event-sounds_0.1.3_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build mx-event-sounds
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
